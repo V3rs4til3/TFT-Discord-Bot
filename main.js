@@ -19,7 +19,7 @@ client.on('interactionCreate', async interaction => {
 		const term = interaction.options.getString('sumonner');
 		
 		const query = new URLSearchParams({ term });
-		const dictResult = await request(`https://na1.api.riotgames.com/tft/summoner/v1/summoners/by-name/rerollornothing?api_key=RGAPI-ead2fec0-343a-4d0a-a8cc-c95f3ce08954`)
+		
 		//const dictResult = await request(`https://na1.api.riotgames.com/tft/league/v1/entries/by-summoner/${query}?|${riotAppId}`, {method: `GET`});
 		
 		const { list } = await getJSONResponse(dictResult.body);
